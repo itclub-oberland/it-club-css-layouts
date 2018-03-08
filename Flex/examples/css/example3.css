@@ -1,0 +1,54 @@
+.container-all{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#f2f2f2;
+}
+
+.container{
+    margin:20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    display:flex;
+    /*Change values to see impact, observe effects*/
+    flex-flow: row wrap;
+    /*these two properties are the same as flex-flow*/
+    /*flex-direction:row; */ /* row | row-reverse | column | column-reverse*/
+    /*flex-wrap:wrap;*/ /* wrap | nowrap*/
+    align-content: initial; /* flex-start | flex-end | center | space-between | space-around | stretch */
+    justify-content: initial; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+    align-items: initial; /* flex-start | flex-end | center | baseline | stretch */
+}
+.item{
+    font-size:3rem;
+    font-weight:bold;
+    color:white;
+    width:200px;
+    height:200px;
+    /*flex:0 200px 0; the same as the three properties below*/
+    /* Manipulate values to see what happens, observe effects*/
+    flex-grow: 0; /* Proportion, ie. weight, for element to grow according to, 0 means no weighting*/
+    flex-basis:200px; /* Direct value, the base value of an element*/
+    flex-shrink:0; /* Proprotion, ie. weight for shrinking, 0 means no weighting*/
+    text-align:center;
+    margin:10px;
+    background-color:rgba(0,128,255,1);
+}
+
+/* Default of order is 0, therefore all items without explicit order will be placed before*/
+.item-order2{
+    order:0;
+}
+
+.item-order3{
+    order:0;
+}
+
+.item-align-self-10{
+    align-self: center; /* auto | flex-start | flex-end | center | baseline | stretch */
+}
+
+.item-align-self-12{
+    align-self: flex-end; /* auto | flex-start | flex-end | center | baseline | stretch */
+}

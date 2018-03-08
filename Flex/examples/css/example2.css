@@ -9,21 +9,34 @@ body{
     right:0;
     bottom:0;
     background-color:#f2f2f2;
-    display:flex;
 }
 
 .container{
-    width:800px;
-    height:400px;
-    background-color:#f2f2f2;
-    margin:0 auto;
     display:flex;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.container-item{
+    border:1px solid red;
+    flex:1;
+    background-color:rgba(0,128,255,0.2);
 }
 
 .item{
     border:1px solid red;
-    flex: 1;
+    flex-basis:200px;
     background-color:rgba(0,128,255,0.2);
+}
+
+.item-extend{
+    flex-grow: 1;
 }
 
 .row{

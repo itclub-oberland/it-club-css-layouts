@@ -1,0 +1,60 @@
+body *{
+    border:1px solid red;
+    margin:0;
+    padding:10px;
+}
+
+.frame{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.float-left{
+    float:left;
+}
+
+.float-left::after{
+    content:"FLOAT LEFT";
+}
+
+.float-right{
+    float:right;
+}
+
+.float-right::after{
+    content:"FLOAT RIGHT";
+}
+
+.float-none{
+    font-weight:bold;
+    background:rgba(0,255,0,0.1);
+    float:none;
+}
+.float-none::after{
+    content:"FLOAT-NONE"
+}
+
+.clear-left{
+    clear:left;
+}
+
+.clear-left::after{
+    content:"CLEAR LEFT"
+}
+
+.clear-right{
+    clear:right;
+}
+
+.clear-right::after{
+    content:"CLEAR RIGHT"
+}
+
+.clear-both{
+    clear:both;
+}
+
+.clear-both::after{
+    content:"CLEAR BOTH"
+}

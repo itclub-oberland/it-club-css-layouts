@@ -1,0 +1,32 @@
+#first *, #second *, #third *, #fourth *, .middle, #first, #second, #third, #fourth {
+    border: 1px solid red;
+}
+
+#first, #third {
+    float:left;
+    background-color: rgba(0, 255,0,0.5);
+    overflow: auto;
+}
+
+#second, #fourth {
+    float:right;
+    background-color: rgba(255,64, 64,0.5);;
+    overflow: auto;
+}
+
+#first *, #third * {
+    background-color: rgba(40, 153, 0, 0.5);
+    float: left;
+    clear: left;
+}
+
+.middle {
+    background-color: rgba(255, 255, 0, 0.5);
+    clear: left;
+}
+
+#second *, #fourth *{
+    background-color: rgba(255,0, 0,0.5);
+    clear: right;
+    float: right;
+}

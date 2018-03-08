@@ -1,0 +1,100 @@
+body{
+    background-color: rgba(168, 18, 10, 0.2);
+}
+
+.main-container{
+    margin:100px;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    perspective: 200px;
+}
+
+.main-container > div{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.item > h1{
+    text-align: center;
+    font-size:5rem;
+}
+
+.item{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color:white;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: rotateX(3deg) scaleX(0.975);
+    transition: transform 1s;
+}
+
+.item:hover{
+    transform: translateY(-5px) rotateY(0deg) scaleY(1);
+    transition: transform 1s;
+}
+
+.item2{
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    background-color:white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotateX(-3deg) scaleX(0.975);
+    transition: transform 1s;
+}
+
+.item2:hover{
+    transform: translateY(5px) rotateY(0deg) scaleY(1);
+    transition: transform 1s;
+}
+
+.item3{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color:white;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    transform: translateX(80px) rotateY(-10deg) scaleY(0.81);
+    transition: transform 1s;
+}
+
+.item3:hover{
+    transform: translateX(-5px) rotateY(0deg) scaleY(1);
+    transition: transform 1s;
+}
+
+.item4{
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+    background-color:white;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: translateX(-80px) rotateY(10deg) scaleY(0.81);
+    transition: transform 1s;
+}
+.item4:hover{
+    transform: translateX(5px) rotateY(0deg) scaleY(1);
+    transition: transform 1s;
+}
+
+.centerItem{
+    grid-column: 2/4;
+    grid-row:2/4;
+    background: white url("https://itclubdotblog.files.wordpress.com/2017/06/ueberuns_header1.jpg?w=2000&h=1080&crop=1") no-repeat;
+    background-size:40vw;
+    background-position-x: 100px;
+}
+
+.item3 > ul{
+    font-size:4rem;
+    list-style: none;
+    position:relative;
+    left:100px;
+    font-family: "Calibri", serif;
+}

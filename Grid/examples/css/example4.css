@@ -1,0 +1,57 @@
+.main-container {
+    display: grid;
+    /*Be aware. we are naming column/row lines here, ie a 4 columned grid has 5 lines*/
+    grid-template-columns: repeat(2, 1fr) 1fr [colend myend yourend]; /**Last line has multiple names*/
+    grid-template-rows: repeat(3, 1fr) [targetrow] 1fr [rowend];
+    grid-auto-flow: row;
+    justify-items: initial;
+    align-items: initial;
+    grid-template-areas:
+            "zafer zafer zafer"
+            "zafer zafer zafer";
+}
+
+.main-container > div{
+    border:1px solid red;
+    text-align: center;
+}
+
+.item1{
+    grid-area: zafer;
+}
+.item2{
+    /* try myend, yourend instead of colend, same result*/
+    grid-area: 3 / 1 / targetrow / colend;
+}
+
+.outer-fixation{
+    margin: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flex-container{
+    display:flex;
+}
+
+.flex-main{
+    margin: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flex-direction-row{
+    flex-flow: row nowrap;
+}
+
+.flex-item{
+    flex:1;
+    background-color:rgba(255,0,0,0.1);
+    border:1px solid red;
+}

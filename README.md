@@ -16,6 +16,10 @@ This repo contains three separate exercises and examples for Classic Layouting, 
 2) Analyze the target page below
 3) Implement the target page with CSS Grids Layouting
 
+# Live Preview Examples
+
+[Go to Live Preview](http://htmlpreview.github.io/?https://github.com/Zmote/it-club-css-layouts/blob/master/index.html)
+
 # Target Page
 
 ![alt text](https://github.com/Zmote/it-club-css-layouts/blob/master/target_html.jpg "Taget Page")

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Layout Examples</title>
+    <link rel="stylesheet" href="css/example7.css"/>
+</head>
+<body>
+<!-- Positioning examples, Coordinate system -->
+<div class="header">HEADER</div>
+<div class="centerMe">
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <div class="relPosLeft">
+        I am relative
+    </div>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <!-- Same definition, different context, observe effects (especially interaction with other elements)-->
+    <div class="box" style="left:0; top:0">0, 0</div>
+    <div class="box" style="left:100px; top:100px">100, 100</div>
+    <div class="box" style="left:200px; top:200px">200, 200</div>
+    <div class="box" style="left:300px; top:300px">300, 300</div>
+    <div class="box" style="left:400px; top:400px">400, 400</div>
+</div>
+<!-- Same definition, different context, observe effects (especially interaction with other elements)-->
+<div class="box" style="left:0; top:0">0, 0</div>
+<div class="box" style="left:100px; top:100px">100, 100</div>
+<div class="box" style="left:200px; top:200px">200, 200</div>
+<div class="box" style="left:300px; top:300px">300, 300</div>
+<div class="box" style="left:400px; top:400px">400, 400</div>
+<div class="footer">FOOTER</div>
+</body>
+</html>

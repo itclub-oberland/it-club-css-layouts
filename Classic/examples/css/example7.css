@@ -1,0 +1,54 @@
+/**
+* try different values for position and observe it's effects
+* fixed, static, absolute, relative etc.
+*/
+.footer {
+    height: 20px;
+    background-color: blue;
+    position: fixed;
+    left: 0;
+    bottom: calc(0% - 0px);
+    right: 0;
+    z-index: 100;
+    color:white;
+    text-align: center;
+}
+
+.relPosLeft {
+    position: relative;
+    left: 100px;
+}
+
+.box {
+    display:none; /** Remove this property to show boxes*/
+    position: absolute;
+    height: 50px;
+    color:white;
+    width: 50px;
+    background-color: black;
+    z-index: 101;
+}
+
+/**
+* try different values for position and observe it's effects
+* fixed, static, absolute, relative etc.
+*/
+.header {
+    height: 50px;
+    background-color: blue;
+    color:white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.centerMe {
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+}

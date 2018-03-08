@@ -1,0 +1,16 @@
+body{
+    background-color:lightgrey;
+}
+
+.container{
+    width:800px;
+    height:400px;
+    background-color:#f2f2f2;
+    margin:0 auto;
+    display:flex;
+}
+
+.item{
+    border:1px solid red;
+    flex: 1;
+}

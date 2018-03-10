@@ -51,6 +51,23 @@ body *{
     content:"CLEAR RIGHT"
 }
 
+.non-usual{
+    border:4px solid green;
+}
+
+.autoflow{
+    overflow:hidden;
+    width:200px;
+}
+
+div.clear-both-after:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 .clear-both{
     clear:both;
 }

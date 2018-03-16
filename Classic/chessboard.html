@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .chessboard-container {
+        margin:0 auto;
+        width: 50vw;
+        height:85vh;
+    }
+
+    .parent{
+        float:left;
+        clear:left;
+        width:84vw;
+    }
+
+    .kare{
+        float:left;
+        width:200px;
+        height:200px;
+        background-color:black;
+    }
+
+    .kare:nth-child(even){
+        background-color:black;
+    }
+
+    .kare:nth-child(odd){
+        background-color:white;
+    }
+
+    .parent:nth-child(even) > .kare:nth-child(even){ /** 0, 2, 4, 6, 8*/
+        background-color:white; /* 0, 2, 4, 6, 8*/
+    }
+    .parent:nth-child(even) > .kare:nth-child(odd){ /** 0, 2, 4, 6, 8*/
+        background-color:black;
+    }
+
+
+    .parent:nth-child(odd) > .kare:nth-child(even){ /** 1, 3, 5, 7 */
+        background-color:black; /* 0, 2, 4, 6, 8*/
+    }
+    .parent:nth-child(odd) > .kare:nth-child(odd){ /** 1, 3, 5, 7 */
+        background-color:white; /** 1, 3, 5, 7 */
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="chessboard-container">
+        <!-- ODD -->
+        <div class="parent">
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+        </div>
+        <!-- EVEN -->
+        <div class="parent">
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+            <!-- ODD -->
+            <div class="kare"></div>
+            <!-- EVEN -->
+            <div class="kare"></div>
+        </div>
+        <!-- ODD -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+        <!-- EVEN -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+        <!-- ODD -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+        <!-- EVEN -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+        <!-- ODD -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+        <!-- EVEN -->
+        <div class="parent">
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+            <div class="kare"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

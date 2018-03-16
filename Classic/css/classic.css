@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.tab-fix-1:after{
+    content:"";
+    padding-left:1.1rem;
+}
+
+.tab-fix-2:after{
+    content:"";
+    padding-left:1.3rem;
+}
+
+/*
+* HEADER
+*/
+
+.header {
+    float: left;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.header > div {
+    height: 100%;
+    border: 1px solid black;
+}
+
+.header > div > div {
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+
+.header > div > div > button {
+    height: 40px;
+    width: 200px;
+}
+
+#right-floating {
+    float: right;
+}
+
+#right-floating > div {
+    padding: 10px;
+    float: right;
+}
+
+#right-floating > .logo{
+    background: url("https://itclubdotblog.files.wordpress.com/2017/06/ueberuns_header1.jpg?w=2000&h=1080&crop=1") no-repeat;
+    background-position:-60px -6px;
+    background-size:130px;
+    color:rgba(0,0,0,0);
+}
+
+/*
+* MAIN
+*/
+
+.main {
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 51rem;
+}
+
+/*
+* MAIN > SIDEBAR
+*/
+
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.sidebar > div {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+* MAIN > SIDEBAR > HYPERLINKS
+*/
+
+.hyperlinks_parent {
+    width: 100%;
+    height: 60%;
+    padding: 0 10px 10px;
+}
+
+.hyperlinks {
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.hyperlinks_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hyperlinks > div > div {
+    height: 16.66%;
+    width: 100%;
+    text-align: center;
+    padding: 24px;
+}
+
+/*
+* MAIN > SIDEBAR > RADIOS
+*/
+
+.radiobuttons > div {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.radiobuttons > label{
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.radiobuttons_parent {
+    width: 100%;
+    height: 40%;
+    padding: 0 10px 10px;
+}
+
+.radiobuttons {
+    border: 1px solid black;
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 100%;
+}
+
+.radiobuttons > div {
+    height: 50px;
+}
+
+.radiobuttons > p {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.radiobuttons > div > button {
+    height: 100%;
+    width: 50%;
+}
+
+/*
+* MAIN > CONTENT
+*/
+
+.content_parent {
+    float: left;
+    width: 80%;
+    height: 100%;
+    padding: 0 10px 10px 0;
+}
+
+.content {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.card{
+    float:left;
+    width:25%;
+    padding:20px;
+}
+
+.card > img{
+    border:3px solid black;
+    width:100%;
+}
+
+.card > h2{
+    text-align: center;
+}
+
+.card > p{
+    text-align: center;
+}
+
+/*
+* FOOTER
+*/
+
+.footer_parent {
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 3rem;
+    padding: 0 10px 10px;
+}
+
+.footer {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.footer > h5 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/**
+* Media Query to change layout after width becomes smaller than 800px, this is not part of the assignment
+*/
+
+@media screen and (max-width: 800px) {
+    .main {
+        height: auto;
+    }
+
+    .content_parent {
+        width: 100%;
+        clear: left;
+        padding: 0 10px 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .hyperlinks > div > div {
+        width: auto;
+        display: inline-block;
+    }
+
+    .hyperlinks_wrapper {
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+    }
+
+    #right-floating {
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    #right-floating > div {
+        float: none;
+        display: inline-block;
+    }
+
+    .header > div > div > button {
+        width: 100%;
+    }
+
+    .header > div > div {
+        width: 100%;
+        clear: left;
+    }
+
+    .radiobuttons {
+        padding-bottom: 10px;
+    }
+}

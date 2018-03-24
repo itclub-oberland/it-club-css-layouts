@@ -17,88 +17,106 @@
 </head>
 <body>
 <div class="container-fluid" style="width:35vw;margin:10px auto;">
-    <img src="https://itclubdotblog.files.wordpress.com/2017/06/ueberuns_header1.jpg?w=2000&h=1080&crop=1" width="200px"/>
+    <img src="https://itclubdotblog.files.wordpress.com/2017/06/ueberuns_header1.jpg?w=2000&h=1080&crop=1"
+         width="200px"/>
     <h1>IT CLUB CSS LAYOUT EXAMPLES</h1>
     <hr>
-    <p>Download the examples to test out the examples; to see how the properties affect the layout</p>
-    <div>
-        <h1>Classic</h1>
-        <ul>
-            <li>
-                <a href="Classic/examples/example1.html">Example 1</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example2.html">Example 2</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example3.html">Example 3</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example4.html">Example 4</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example5.html">Example 5</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example6.html">Example 6</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example7.html">Example 7</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example8.html">Example 8</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example9.html">Example 9</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example10.html">Example 10</a>
-            </li>
-            <li>
-                <a href="Classic/examples/example11.html">Example 11</a>
-            </li>
-            <li>
-                <a href="Classic/chessboard.html">Chessboard HTML Sample Solution</a>
-            </li>
-            <li>
-                <a href="Classic/index.html">Target HTML Sample Solution</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h1>Flex</h1>
-        <ul>
-            <li>
-                <a href="Flex/examples/example3.html">Example 1</a>
-            </li>
-            <!--Yup, I know html file number and exercise number don't match-->
-            <li>
-                <a href="Flex/examples/example1.html">Example 2</a>
-            </li>
-            <li>
-                <a href="Flex/examples/example2.html">Example 3</a>
-            </li>
-            <li>
-                <a href="Flex/calculator.html">Calculator Solution</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h1>CSS Grids</h1>
-        <ul>
-            <li>
-                <a href="Grid/examples/example1.html">Example 1</a><sup>Make sure to view at 100%</sup>
-            </li>
-            <li>
-                <a href="Grid/examples/example2.html">Example 2</a>
-            </li>
-            <li>
-                <a href="Grid/examples/example3.html">Example 3</a>
-            </li>
-            <li>
-                <a href="Grid/examples/example4.html">Example 4</a>
-            </li>
-        </ul>
+    <p>Download the examples to test them out; check and see how the properties affect the layout</p>
+    <p>The solutions aren't how your solution needs to look; they're but an example how it could have been solved</p>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#classic">Classic</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#flex">Flex</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#grids">CSS Grids</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="classic" role="tabpanel" aria-labelledby="classic-tab">
+            <h1 class="mt-4">Classic</h1>
+            <ul>
+                <li>
+                    <a href="Classic/examples/example1.html">Example 1</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example2.html">Example 2</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example3.html">Example 3</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example4.html">Example 4</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example5.html">Example 5</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example6.html">Example 6</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example7.html">Example 7</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example8.html">Example 8</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example9.html">Example 9</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example10.html">Example 10</a>
+                </li>
+                <li>
+                    <a href="Classic/examples/example11.html">Example 11</a>
+                </li>
+                <li>
+                    <a href="Classic/chessboard.html">Chessboard HTML Sample Solution</a>
+                </li>
+                <li>
+                    <a href="Classic/index.html">Target HTML Sample Solution</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade show active" id="flex" role="tabpanel" aria-labelledby="flex-tab">
+            <h1 class="mt-4">Flex</h1>
+            <ul>
+                <li>
+                    <a href="Flex/examples/example3.html">Example 1</a>
+                </li>
+                <!--Yup, I know html file number and exercise number don't match-->
+                <li>
+                    <a href="Flex/examples/example1.html">Example 2</a>
+                </li>
+                <li>
+                    <a href="Flex/examples/example2.html">Example 3</a>
+                </li>
+                <li>
+                    <a href="Flex/calculator.html">Calculator Solution</a>
+                </li>
+                <li>
+                    <a href="Flex/index.html">Target HTML Sample Solution</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="grids" role="tabpanel" aria-labelledby="grids-tab">
+            <h1 class="mt-4">CSS Grids</h1>
+            <ul>
+                <li>
+                    <a href="Grid/examples/example1.html">Example 1</a><sup>Make sure to view at 100%</sup>
+                </li>
+                <li>
+                    <a href="Grid/examples/example2.html">Example 2</a>
+                </li>
+                <li>
+                    <a href="Grid/examples/example3.html">Example 3</a>
+                </li>
+                <li>
+                    <a href="Grid/examples/example4.html">Example 4</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 </body>

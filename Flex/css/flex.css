@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc(100% - 40px);
+    margin:20px;
+    min-height: calc(100vh - 40px);
+}
+
+.header {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.header-button {
+    flex-grow: 1;
+    margin: 20px;
+}
+
+.header-image-section {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    flex-grow: 1;
+    flex-shrink:0;
+    min-height:80px;
+}
+
+.header-image {
+    flex-basis: 70px;
+    min-width:70px;
+    margin:20px;
+}
+
+.logo-text {
+    flex-basis: 100px;
+    /*Die unteren Properties werden gesetzt,
+      damit der Textknoten im div nach Flex
+      layoutet werden kann, hier zentrieren wir
+      es in beide Achsen
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-top:20px;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 50;
+}
+
+.left-section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow:1;
+    flex-basis:400px;
+    flex-shrink:4;
+}
+
+.hyperlinks {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 3;
+    border: 1px solid black;
+}
+
+.hyperlinks-image {
+    flex-grow: 2;
+}
+
+.img {
+    background: url("http://hdimages.org/wp-content/uploads/2017/03/placeholder-image4.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.hyperlink {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll {
+    margin-top:20px;
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.poll-items {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.input-wrapper {
+    display: flex;
+    margin: 10px 0;
+}
+
+.right-section{
+    border:1px solid black;
+    margin-left:20px;
+    flex-grow:4;
+    flex-shrink:10;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow:auto;
+}
+
+.right-section-item{
+    padding:20px;
+    flex-grow:1;
+    height:50%;
+    flex-basis:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+.right-section-item > div:first-child{
+    flex-basis:100px;
+}
+
+.right-section-subitem{
+    flex-grow:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin-top:20px;
+    flex-grow: 4;
+    flex-basis:50px;
+    border: 1px solid black;
+    /*Die unteren Properties werden gesetzt,
+      damit der Textknoten im div nach Flex
+      layoutet werden kann, hier zentrieren wir
+      es in beide Achsen
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -20,6 +20,8 @@ This repo contains three separate exercises and examples for Classic Layouting, 
 
 [Go to Live Preview](http://htmlpreview.github.io/?https://github.com/Zmote/it-club-css-layouts/blob/master/index.html)
 
+You may need to download the repo to properly check out the previews as HTMLPreview for GitHub sometimes blocks JavaScript.
+
 # Target Page
 
 ![alt text](https://github.com/Zmote/it-club-css-layouts/blob/master/target_html.jpg "Taget Page")

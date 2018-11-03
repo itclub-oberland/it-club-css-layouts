@@ -18,7 +18,7 @@ This repo contains three separate exercises and examples for Classic Layouting, 
 
 # Live Preview Examples
 
-[Go to Live Preview](https://raw.githubusercontent.com/itclub-oberland/it-club-css-layouts/master/index.html)
+[Go to Live Preview](http://htmlpreview.github.io/?https://raw.githubusercontent.com/itclub-oberland/it-club-css-layouts/master/index.html)
 
 You may need to download the repo to properly check out the previews as HTMLPreview for GitHub sometimes blocks JavaScript.
 

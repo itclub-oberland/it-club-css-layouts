@@ -111,5 +111,13 @@
 <script type="text/javascript" src="./libs/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" src="./libs/popper.min.js"></script>
 <script type="text/javascript" src="./libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script>
+    $(`[aria-labelledby]`).click(function(event){
+        for(let item of $(`[aria-labelledby]`)){
+            item.removeClass("show active");
+        }
+        $(event).addClass("show active");
+    });
+</script>
 </body>
 </html>
